@@ -8,6 +8,12 @@ namespace MVC5Course.Controllers
 {
     public class HomeController : BaseController
     {
+        public ActionResult NewIndex()
+        {
+            return View();
+        }
+
+
         public ActionResult Index()
         {
             return View();

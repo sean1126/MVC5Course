@@ -299,6 +299,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="index.html" />
     <Content Include="Models\EFGeneratePartialClass.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>EFGeneratePartialClass.cs</LastGenOutput>
@@ -392,9 +393,15 @@
     <Content Include="Views\Shared\Error2.cshtml" />
     <Content Include="Views\VT\Index.cshtml" />
     <Content Include="Views\VT\RazorTest.cshtml" />
+    <Content Include="Views\Home\NewIndex.cshtml" />
+    <Content Include="Views\Shared\_Layout2.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="css\" />
+    <Folder Include="font\" />
+    <Folder Include="img\" />
+    <Folder Include="js\" />
     <Folder Include="Views\Base\" />
   </ItemGroup>
   <ItemGroup>
