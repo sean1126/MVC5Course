@@ -1,0 +1,10 @@
+﻿@model  DateTime?
+
+@if (Model.HasValue)
+{
+    DateTime birthday = Model.Value;
+    string newBir = (birthday.Year - 1911).ToString("000")
+                        + "-" + (birthday.Month + 1).ToString()
+                        + "-" + birthday.Day.ToString();
+    @newBir
+}

@@ -1,0 +1,11 @@
+﻿@model double?
+@using MVC5Course.Models
+
+@{ 
+    var db = new FabricsEntities();
+    var rating_list = (from p in db.Clients select p.CreditRating).Distinct().OrderBy(p => p).ToList();
+    var CreditRating = new SelectList(rating_list, Model);
+}
+@Html.DropDownList("",CreditRating,"-- 請選擇 Rating--", new {onchange="this.form.submit();return false;" })
+
+
